@@ -1,0 +1,51 @@
+.tile {
+  border: 1px solid #907575;
+  background-color: white;
+  color: black;
+  height: 0;
+  width: 25%;
+  padding-bottom: 25%;
+  font-size: 3.3vw;
+}
+
+.tile.empty {
+  cursor: pointer;
+}
+
+.tile.highlight {
+  animation-duration: 2s;
+  animation-name: highlight;
+  color: #517d96;
+  background-color: #d2d2d2;
+  text-shadow: 5px 5px rosybrown;
+  transition: 0.3s;
+}
+
+.tile.highlight:hover {
+  text-shadow: 2px 2px rosybrown;
+}
+
+.tile > div {
+  font-size: 1em;
+  margin-top: 50%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@keyframes highlight {
+  from {
+    color: black;
+    background-color: white;
+    text-shadow: 0px 0px white;
+  }
+  to {
+    color: #517d96;
+    background-color: #d2d2d2;
+    text-shadow: 5px 5px rosybrown;
+  }
+}

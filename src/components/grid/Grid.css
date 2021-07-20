@@ -1,0 +1,11 @@
+#grid {
+  width: 20%;
+  margin: 2% auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
