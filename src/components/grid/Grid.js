@@ -72,11 +72,6 @@ class Grid extends React.Component {
       return [];
     }
 
-    if (this.moveStack.length === this.state.tiles.length) {
-      this.setState({ gameover: true });
-      return [];
-    }
-
     let linked = {
       x: [],
       y: [],
@@ -114,6 +109,10 @@ class Grid extends React.Component {
       if (linked[obj].length >= this.state.size) {
         return linked[obj];
       }
+    }
+    if (this.moveStack.length === this.state.tiles.length) {
+      this.setState({ gameover: true });
+      return [];
     }
     return [];
   }
