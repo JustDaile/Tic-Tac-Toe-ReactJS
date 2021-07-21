@@ -137,7 +137,7 @@ class Grid extends React.Component {
   }
   getStatus() {
     if (this.state.gameover) {
-      if (this.scoring.length < 1) {
+      if (this.state.scoring.length < 1) {
         return "Draw";
       }
       return `${this.getCurrentPlayer().icon} Wins!`;
